@@ -22,7 +22,5 @@ public with sharing class ApexTrianglePatterns {
             System.debug(p);
         }
     }
-    public static void HelloWorld(){
-        System.debug('Hello World!');
-    }
+   
 }
