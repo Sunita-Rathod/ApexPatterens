@@ -11,14 +11,14 @@ public with sharing class ApexTrianglePatterns {
 
 public static void triangleWithDash(){
 for(Integer i = 1; i <= 5; i++) {
-    String p = '';
-    for(Integer j = 1; j <= 5; j++) {
-        if(j <= i)
-            p += '* ';
-        else
-            p += '- ';
-    }
-    System.debug(p);
+String p = '';
+for(Integer j = 1; j <= 5; j++) {
+if(j <= i)
+    p += '* ';
+else
+    p += '- ';
+}
+System.debug(p);
 }
 }
 
@@ -61,7 +61,7 @@ System.debug(p);
 
 }
 
-/*
+/* Pattern 4
 
 **
 ****
@@ -74,13 +74,68 @@ for (Integer i=1; i<=4;i++){
 String p='';
 for(Integer j=1 ; j<=i;j++){
 for(Integer k=1;k<=2;k++){
-    //   System.debug('*');
-    p+='*';
+//   System.debug('*');
+p+='*';
 }
 }
 System.debug(p);
 }
 }
+/*  Pattern 5
 
+*****
+*****
+*****
+*****
+*****
 
+*/
+public static void starBox(){
+for(Integer i=1;i<=5;i++){
+String p='';
+for(Integer j=1;j<=5;j++){
+p+='*';
+}
+System.debug(p);
+}
+
+}
+
+/* Pattern 6
+
+*
+*
+*
+
+*/
+public static void oneLineStar(){
+for(Integer i=1;i<=3;i++){
+System.debug('*');
+}
+
+}
+
+/* Pattern 7
+
+***
+
+*/
+public static void oneLineStar(){
+String p='';
+for(Integer i=1;i<=3;i++){
+p+='*';
+}
+System.debug(p);
+}
+
+/* Pattern 8
+
+*
+*
+*
+
+*/
+public static void oneLineStar(){
+
+}
 }
