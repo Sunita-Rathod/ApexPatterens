@@ -166,7 +166,7 @@ public with sharing class ApexTrianglePatterns {
         }
         
     }
-    /*
+    /* Pattern 10
     
      * - - - -
      * * - - -
@@ -189,44 +189,54 @@ public with sharing class ApexTrianglePatterns {
         }
         
     }
-/*
- a]
-* * * * *
-* * * * 
-* * *
-* * 
-* 
-
-b] 
-* * * * *
-- * * * * 
-- - * * *
-- - - * *
-- - - - *
-
-*/    
+    /* Pattern 11
+    a]
+     * * * * *
+     * * * *
+     * * *
+     * *
+     *
+    
+    b]
+    * * * * *
+    - * * * *
+    - - * * *
+    - - - * *
+    - - - - *
+        
+     */
     public static void p11(){
         for(Integer i = 1; i <= 5; i++) {
-    String p = '';
-    for(Integer j = 1; j <= 5; j++) {
-        if(j >= i)
-            p += '* ';
-        else
-            p += ' ';
+            String p = '';
+            for(Integer j = 1; j <= 5; j++) {
+                if(j >= i)
+                    p += '* ';
+                else
+                    p += ' ';
+            }
+            System.debug(p);
+        }
     }
-    System.debug(p);
-}
-
-for(Integer i = 1; i <= 5; i++) {
-    String p = '';
-    for(Integer j = 1; j <= 5; j++) {
-        if(j >= i)
-            p += '*';
-        else
-            p += '-';
-    }
-    System.debug(p);
-}
-    }
+    /* Pattern 12
     
+    *****
+    -****
+    --***
+    ---**
+    ----*
+        
+     */
+    public static void p12(){
+        for(Integer i = 1; i <= 5; i++) {
+            String p = '';
+            for(Integer j = 1; j <= 5; j++) {
+                if(j >= i)
+                    p += '*';
+                else
+                    p += '-';
+            }
+            System.debug(p);
+        }
+    }
+            
 }
