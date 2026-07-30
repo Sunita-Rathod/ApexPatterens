@@ -166,7 +166,7 @@ public with sharing class ApexTrianglePatterns {
         }
         
     }
-    /* Pattern 10
+    /*  Pattern 10
     
      * - - - -
      * * - - -
@@ -174,7 +174,7 @@ public with sharing class ApexTrianglePatterns {
      * * * * -
      * * * * *
     
-     */
+      */
     
     public static void p10(){
         for(Integer i = 1; i <= 5; i++) {
@@ -191,11 +191,11 @@ public with sharing class ApexTrianglePatterns {
     }
     /* Pattern 11
     a]
-     * * * * *
-     * * * *
-     * * *
-     * *
-     *
+    * * * * *
+    * * * *
+    * * *
+    * *
+    *
     
     b]
     * * * * *
@@ -238,5 +238,163 @@ public with sharing class ApexTrianglePatterns {
             System.debug(p);
         }
     }
-            
+    /*
+    
+    * - - - -
+    - * - - -
+    - - * - -
+    - - - * -
+    - - - - *
+        
+     */
+    public static void p13(){
+        for(Integer i = 1; i <= 5; i++) {
+            String p = '';
+            for(Integer j = 1; j <= 5; j++) {
+                if(i == j)
+                    p += '* ';
+                else
+                    p += '- ';
+            }
+            System.debug(p);
+        }
+    }
+    
+    /*
+
+    - - - - *
+    - - - * -
+    - - * - -
+    - * - - -
+    * - - - -
+    
+    */
+    
+    public static void p14(){
+        for(Integer i = 1; i <= 5; i++) {
+            String p = '';
+            for(Integer j = 1; j <= 5; j++) {
+                if(i + j == 6)
+                    p += '* ';
+                else
+                    p += '- ';
+            }
+            System.debug(p);
+        }
+    }
+
+    /*
+    
+1-
+1-2-
+1-2-3-
+1-2-3-4-
+1-2-3-4-5-
+
+    */
+
+    public static void p15(){
+        for(Integer i = 1; i <= 5; i++) {
+            String p = '';
+        for(Integer j = 1; j <= i; j++) {
+        p += j + '-';
+        }
+    System.debug(p);
+   }
+
+   /*
+   
+   1-
+   2-1-
+   3-2-1-
+   4-3-2-1-
+   5-4-3-2-1-
+
+   */
+  for(Integer i = 1; i <= 5; i++) {
+    String p = '';
+    for(Integer j = i; j >= 1; j--) {
+        p += j + '-';
+    }
+    System.debug(p);
+}
+
+/*
+5-4-3-2-1-
+4-3-2-1-
+3-2-1-
+2-1-
+1-
+*/
+for(Integer i = 5; i >= 1; i--) {
+    String p = '';
+    for(Integer j = i; j >= 1; j--) {
+        p += j + ' ';
+    }
+    System.debug(p);
+}
+    }
+
+    /*
+    
+    */
+
+  for(Integer i = 1; i <= 5; i++) {
+    String p = '';
+    for(Integer j = 1; j <= 5; j++) {
+        if(j == 1 || j == 5 || i == 1 || i == 5)
+            p += '* ';
+        else
+            p += '  ';
+    }
+    System.debug(p);
+}
+
+//
+for(Integer i = 1; i <= 5; i++) {
+    String p = '';
+    for(Integer j = 1; j <= 5; j++) {
+        if(i == j || i + j == 6)
+            p += '* ';
+        else
+            p += '- ';
+    }
+    System.debug(p);
+}
+
+//
+for(Integer i = 1; i <= 5; i++) {
+    String p = '';
+    for(Integer j = 1; j <= i; j++) {
+        if(j % 2 == 0)
+            p += '0 ';
+        else
+            p += '1 ';
+    }
+    System.debug(p);
+}
+
+//
+
+for(Integer i = 1; i <= 5; i++) {
+    String p = '';
+    for(Integer j = 1; j <= 5 - i; j++) {
+        p += ' ';
+    }
+    for(Integer k = 1; k <= i; k++) {
+        p += '* ';
+    }
+    System.debug(p);
+}
+//
+for(Integer i = 1; i <= 3; i++) {
+    for(Integer j = 1; j <= 2; j++) {
+        String p = '';
+        for(Integer k = 1; k <= j; k++) {
+            p += '* ';
+        }
+        System.debug('i=' + i + ', j=' + j + ' => ' + p);
+    }
+}
+    
 }
