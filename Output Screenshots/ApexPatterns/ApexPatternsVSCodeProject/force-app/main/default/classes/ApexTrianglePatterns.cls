@@ -392,20 +392,20 @@ for(Integer i = 5; i >= 1; i--) {
 
 /* Pattern 20
 */
-/*
+
 public static void p20(){
 for(Integer i = 1; i <= 5; i++) {
     String p = '';
     for(Integer j = 1; j <= i; j++) {
-        if(j % 2 == 0)
-            p += '0 ';
-        else
-            p += '1 ';
+        if(Math.mod(j, 2) == 0)
+                p += '0 ';
+            else
+                p += '1 ';
     }
     System.debug(p);
 }
 }
-*/
+
 
 //
 /* Pattern 21
