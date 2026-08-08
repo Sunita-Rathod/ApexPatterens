@@ -456,6 +456,90 @@ for(Integer i = 1; i <= 3; i++) {
     }
 }
 }
+
+/* Pattern 23
+
+*
+* *
+* * *
+* * * *
+* * * *
+* * *
+* *
+*
+
+*/
+public static void p23(){
+for(Integer i = 1; i <= 4; i++) {
+    String p = '';
+    for(Integer j = 1; j <= i; j++) {
+                    p += '* ';
+        }
+        System.debug(p);
+    }
+
+for(Integer i = 1; i <= 4; i++) {
+    String p = '';
+    for(Integer j = 4; j >= i; j--) {
+                    p += '* ';
+        }
+        System.debug(p);
+    }
+}
+
+/* Pattern 24
+
+*
+* *
+* * *
+* * * *
+* * * *
+* * *
+* *
+*
+
+*/
+public static void p24(){
+for(Integer i = 1; i <= 4; i++) {
+    String p = '';
+    for(Integer j = 1; j <= i; j++) {
+                    p += '* ';
+        }
+        System.debug(p);
+    }
+
+for(Integer i = 1; i <= 4; i++) {
+    String p = '';
+    for(Integer j = 3; j >= i; j--) {
+                    p += '* ';
+        }
+        System.debug(p);
+    }
+}
+
+/* Pattern 25
+
+- - - *
+- - * *
+- * * *
+* * * *
+
+*/
+public static void p25(){
+for(Integer i = 1; i <= 4; i++) {
+    String p = '';
+    
+    for(Integer k = 3; k >= i; k--) {
+        p += '- ';
+    }
+    for(Integer j = 1; j <= i; j++) {
+        p += '* ';
+    }
+    System.debug(p);
+    
+}
+
+
     
 }
 
