@@ -414,12 +414,19 @@ for(Integer i = 1; i <= 5; i++) {
 
 //
 /* Pattern 21
+
+- - - - *
+- - - * *
+- - * * *
+- * * * *
+* * * * *
+
 */
 public static void p21(){
 for(Integer i = 1; i <= 5; i++) {
     String p = '';
     for(Integer j = 1; j <= 5 - i; j++) {
-        p += ' ';
+        p += '- ';
     }
     for(Integer k = 1; k <= i; k++) {
         p += '* ';
@@ -429,6 +436,14 @@ for(Integer i = 1; i <= 5; i++) {
 }
 
 /* Pattern 22
+
+*
+* *
+*
+* * 
+*
+* * 
+
 */
 public static void p22(){
 for(Integer i = 1; i <= 3; i++) {
@@ -437,9 +452,10 @@ for(Integer i = 1; i <= 3; i++) {
         for(Integer k = 1; k <= j; k++) {
             p += '* ';
         }
-        System.debug('i=' + i + ', j=' + j + ' => ' + p);
+        System.debug('i=' + i + ', j=' + j + 'p= ' + p);
     }
 }
 }
     
 }
+
